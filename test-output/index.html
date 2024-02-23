@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\2303976\eclipse-workspace\display-bookshelves\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_16_FillPriceDetails" class="method navigator-link" hash-for-method="customiseGiftCard">customiseGiftCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_05_FilterBookshelves" class="method navigator-link" hash-for-method="excludeOutOfStock">excludeOutOfStock</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_17_FillInvalidForm" class="method navigator-link" hash-for-method="fillInvalidForm">fillInvalidForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_19_FillValidForm" class="method navigator-link" hash-for-method="fillValidForm">fillValidForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_18_CaptureAndPrintError" class="method navigator-link" hash-for-method="getAlert">getAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_12_NavigateToGiftCard" class="method navigator-link" hash-for-method="navigateToGiftCards">navigateToGiftCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_06_PrintBookshelves" class="method navigator-link" hash-for-method="printInfo">printInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_10_PrintSubMenuInfo" class="method navigator-link" hash-for-method="printSubmenu">printSubmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_09_RetrieveSubMenuInformation" class="method navigator-link" hash-for-method="retrieveInfo">retrieveInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_03_SearchForBookshelves" class="method navigator-link" hash-for-method="searchForBookshelves">searchForBookshelves</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_15_SelectBirthday" class="method navigator-link" hash-for-method="selectBirthdayOption">selectBirthdayOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_05_FilterBookshelves" class="method navigator-link" hash-for-method="setCategory">setCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_05_FilterBookshelves" class="method navigator-link" hash-for-method="setPrice">setPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_05_FilterBookshelves" class="method navigator-link" hash-for-method="sortBy">sortBy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_14_VerifyBirthDayLink" class="method navigator-link" hash-for-method="verifyBirthDayButton">verifyBirthDayButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_11_VerifyGiftCardLink" class="method navigator-link" hash-for-method="verifyGiftCardLink">verifyGiftCardLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_07_VerifyLivingMenu" class="method navigator-link" hash-for-method="verifyLivingMenu">verifyLivingMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_08_VerifyLivingSubmenus" class="method navigator-link" hash-for-method="verifyLivingSubmenu">verifyLivingSubmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_04_VerifyNavigationToSearchPage" class="method navigator-link" hash-for-method="verifyNavigation">verifyNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_01_VerifyNavigation" class="method navigator-link" hash-for-method="verifyNavigation">verifyNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_13_VerifyNavigationToGiftCard" class="method navigator-link" hash-for-method="verifyNvigationToGiftCards">verifyNvigationToGiftCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_02_VerifySearchBar" class="method navigator-link" hash-for-method="verifySearchBar">verifySearchBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_17_FillInvalidForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillInvalidForm">
+                  </a> <!-- fillInvalidForm -->
+                  <span class="method-name">fillInvalidForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_06_PrintBookshelves</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="printInfo">
+                  </a> <!-- printInfo -->
+                  <span class="method-name">printInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_19_FillValidForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillValidForm">
+                  </a> <!-- fillValidForm -->
+                  <span class="method-name">fillValidForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_13_VerifyNavigationToGiftCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNvigationToGiftCards">
+                  </a> <!-- verifyNvigationToGiftCards -->
+                  <span class="method-name">verifyNvigationToGiftCards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_09_RetrieveSubMenuInformation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="retrieveInfo">
+                  </a> <!-- retrieveInfo -->
+                  <span class="method-name">retrieveInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_04_VerifyNavigationToSearchPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigation">
+                  </a> <!-- verifyNavigation -->
+                  <span class="method-name">verifyNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_02_VerifySearchBar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchBar">
+                  </a> <!-- verifySearchBar -->
+                  <span class="method-name">verifySearchBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_10_PrintSubMenuInfo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="printSubmenu">
+                  </a> <!-- printSubmenu -->
+                  <span class="method-name">printSubmenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_15_SelectBirthday</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectBirthdayOption">
+                  </a> <!-- selectBirthdayOption -->
+                  <span class="method-name">selectBirthdayOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_05_FilterBookshelves</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="excludeOutOfStock">
+                  </a> <!-- excludeOutOfStock -->
+                  <span class="method-name">excludeOutOfStock</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setCategory">
+                  </a> <!-- setCategory -->
+                  <span class="method-name">setCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPrice">
+                  </a> <!-- setPrice -->
+                  <span class="method-name">setPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortBy">
+                  </a> <!-- sortBy -->
+                  <span class="method-name">sortBy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_07_VerifyLivingMenu</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLivingMenu">
+                  </a> <!-- verifyLivingMenu -->
+                  <span class="method-name">verifyLivingMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_18_CaptureAndPrintError</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlert">
+                  </a> <!-- getAlert -->
+                  <span class="method-name">getAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_01_VerifyNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigation">
+                  </a> <!-- verifyNavigation -->
+                  <span class="method-name">verifyNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_08_VerifyLivingSubmenus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLivingSubmenu">
+                  </a> <!-- verifyLivingSubmenu -->
+                  <span class="method-name">verifyLivingSubmenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_11_VerifyGiftCardLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGiftCardLink">
+                  </a> <!-- verifyGiftCardLink -->
+                  <span class="method-name">verifyGiftCardLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_12_NavigateToGiftCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToGiftCards">
+                  </a> <!-- navigateToGiftCards -->
+                  <span class="method-name">navigateToGiftCards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_16_FillPriceDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customiseGiftCard">
+                  </a> <!-- customiseGiftCard -->
+                  <span class="method-name">customiseGiftCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_03_SearchForBookshelves</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForBookshelves">
+                  </a> <!-- searchForBookshelves -->
+                  <span class="method-name">searchForBookshelves</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_14_VerifyBirthDayLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBirthDayButton">
+                  </a> <!-- verifyBirthDayButton -->
+                  <span class="method-name">verifyBirthDayButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2303976\eclipse-workspace\display-bookshelves\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC_01_VerifyNavigation&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_02_VerifySearchBar&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_03_SearchForBookshelves&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_04_VerifyNavigationToSearchPage&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_05_FilterBookshelves&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_06_PrintBookshelves&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_07_VerifyLivingMenu&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_08_VerifyLivingSubmenus&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_09_RetrieveSubMenuInformation&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_10_PrintSubMenuInfo&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_11_VerifyGiftCardLink&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_12_NavigateToGiftCard&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_13_VerifyNavigationToGiftCard&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_14_VerifyBirthDayLink&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_15_SelectBirthday&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_16_FillPriceDetails&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_17_FillInvalidForm&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_18_CaptureAndPrintError&quot;/&gt;
+      &lt;class name=&quot;testCases.TC_19_FillValidForm&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (19 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'setPrice')
+data.setCell(0, 2, 'testCases.TC_05_FilterBookshelves')
+data.setCell(0, 3, 6803);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'printInfo')
+data.setCell(1, 2, 'testCases.TC_06_PrintBookshelves')
+data.setCell(1, 3, 3259);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'navigateToGiftCards')
+data.setCell(2, 2, 'testCases.TC_12_NavigateToGiftCard')
+data.setCell(2, 3, 3233);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'searchForBookshelves')
+data.setCell(3, 2, 'testCases.TC_03_SearchForBookshelves')
+data.setCell(3, 3, 2353);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fillInvalidForm')
+data.setCell(4, 2, 'testCases.TC_17_FillInvalidForm')
+data.setCell(4, 3, 1453);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'fillValidForm')
+data.setCell(5, 2, 'testCases.TC_19_FillValidForm')
+data.setCell(5, 3, 951);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'excludeOutOfStock')
+data.setCell(6, 2, 'testCases.TC_05_FilterBookshelves')
+data.setCell(6, 3, 876);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyNavigation')
+data.setCell(7, 2, 'testCases.TC_04_VerifyNavigationToSearchPage')
+data.setCell(7, 3, 324);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'sortBy')
+data.setCell(8, 2, 'testCases.TC_05_FilterBookshelves')
+data.setCell(8, 3, 280);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'setCategory')
+data.setCell(9, 2, 'testCases.TC_05_FilterBookshelves')
+data.setCell(9, 3, 266);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'retrieveInfo')
+data.setCell(10, 2, 'testCases.TC_09_RetrieveSubMenuInformation')
+data.setCell(10, 3, 266);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'customiseGiftCard')
+data.setCell(11, 2, 'testCases.TC_16_FillPriceDetails')
+data.setCell(11, 3, 217);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyBirthDayButton')
+data.setCell(12, 2, 'testCases.TC_14_VerifyBirthDayLink')
+data.setCell(12, 3, 195);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLivingSubmenu')
+data.setCell(13, 2, 'testCases.TC_08_VerifyLivingSubmenus')
+data.setCell(13, 3, 181);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'printSubmenu')
+data.setCell(14, 2, 'testCases.TC_10_PrintSubMenuInfo')
+data.setCell(14, 3, 158);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'selectBirthdayOption')
+data.setCell(15, 2, 'testCases.TC_15_SelectBirthday')
+data.setCell(15, 3, 108);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyGiftCardLink')
+data.setCell(16, 2, 'testCases.TC_11_VerifyGiftCardLink')
+data.setCell(16, 3, 68);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getAlert')
+data.setCell(17, 2, 'testCases.TC_18_CaptureAndPrintError')
+data.setCell(17, 3, 60);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyNavigation')
+data.setCell(18, 2, 'testCases.TC_01_VerifyNavigation')
+data.setCell(18, 3, 50);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifySearchBar')
+data.setCell(19, 2, 'testCases.TC_02_VerifySearchBar')
+data.setCell(19, 3, 49);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyLivingMenu')
+data.setCell(20, 2, 'testCases.TC_07_VerifyLivingMenu')
+data.setCell(20, 3, 30);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyNvigationToGiftCards')
+data.setCell(21, 2, 'testCases.TC_13_VerifyNavigationToGiftCard')
+data.setCell(21, 3, 24);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">36 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_17_FillInvalidForm</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_06_PrintBookshelves</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_19_FillValidForm</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_13_VerifyNavigationToGiftCard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_09_RetrieveSubMenuInformation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_04_VerifyNavigationToSearchPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_02_VerifySearchBar</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_10_PrintSubMenuInfo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_15_SelectBirthday</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_05_FilterBookshelves</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_07_VerifyLivingMenu</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_18_CaptureAndPrintError</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_08_VerifyLivingSubmenus</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_11_VerifyGiftCardLink</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_12_NavigateToGiftCard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_16_FillPriceDetails</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_03_SearchForBookshelves</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC_14_VerifyBirthDayLink</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_01_VerifyNavigation</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigation</span>
+                <span class="method-start">8889 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_02_VerifySearchBar</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySearchBar</span>
+                <span class="method-start">8944 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_03_SearchForBookshelves</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchForBookshelves</span>
+                <span class="method-start">8995 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_04_VerifyNavigationToSearchPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigation</span>
+                <span class="method-start">11352 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_05_FilterBookshelves</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sortBy</span>
+                <span class="method-start">11677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">excludeOutOfStock</span>
+                <span class="method-start">11959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setPrice</span>
+                <span class="method-start">12839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setCategory</span>
+                <span class="method-start">19644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_06_PrintBookshelves</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">printInfo</span>
+                <span class="method-start">19911 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_07_VerifyLivingMenu</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLivingMenu</span>
+                <span class="method-start">23171 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_08_VerifyLivingSubmenus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLivingSubmenu</span>
+                <span class="method-start">23203 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_09_RetrieveSubMenuInformation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">retrieveInfo</span>
+                <span class="method-start">23385 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_10_PrintSubMenuInfo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">printSubmenu</span>
+                <span class="method-start">23653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_11_VerifyGiftCardLink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGiftCardLink</span>
+                <span class="method-start">23812 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_12_NavigateToGiftCard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">navigateToGiftCards</span>
+                <span class="method-start">23882 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_13_VerifyNavigationToGiftCard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyNvigationToGiftCards</span>
+                <span class="method-start">27117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_14_VerifyBirthDayLink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyBirthDayButton</span>
+                <span class="method-start">27143 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_15_SelectBirthday</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">selectBirthdayOption</span>
+                <span class="method-start">27341 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_16_FillPriceDetails</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">customiseGiftCard</span>
+                <span class="method-start">27451 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_17_FillInvalidForm</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fillInvalidForm</span>
+                <span class="method-start">27669 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_18_CaptureAndPrintError</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAlert</span>
+                <span class="method-start">29124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_19_FillValidForm</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fillValidForm</span>
+                <span class="method-start">29186 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_01_VerifyNavigation</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30139 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
