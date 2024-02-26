@@ -11,5 +11,8 @@ public class TC_01_VerifyNavigation extends BaseClass {
 	@Test
 	void verifyNavigation() {
 		HomePage hp = new HomePage(driver);
-		Assert.assertEquals("Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder", hp.verifyNavigation());}
+		//logger.info("TC_01_VerifyNavigation started");
+		Assert.assertEquals("Buy Furniture Online and Get up to 50% Off | Shop Now - Urban Ladder", hp.verifyNavigation());
+		//logger.info("Navigation to Urbanladder verified");
+	}
 }
