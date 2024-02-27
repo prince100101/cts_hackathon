@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_11_VerifyGiftCardLink extends BaseClass {
 	
-	@Test
+	@Test(groups= {"sanity","regression","master"})
 	void verifyGiftCardLink() {
 		SearchPage sp = new SearchPage(driver);
 		Assert.assertTrue(sp.verifyGiftCard());

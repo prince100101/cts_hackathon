@@ -8,10 +8,9 @@ import testBase.BaseClass;
 
 public class TC_04_VerifyNavigationToSearchPage extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","master"})
 	void verifyNavigation() {
 		SearchPage sp = new SearchPage(driver);
-		System.out.println(driver);
 		Assert.assertTrue(sp.verifyNavigation());
 	}
 }

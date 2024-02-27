@@ -7,9 +7,8 @@ import testBase.BaseClass;
 
 public class TC_17_FillInvalidForm extends BaseClass {
 	
-	@Test
+	@Test(groups= {"regression","master"})
 	void fillInvalidForm() throws InterruptedException {
-		System.out.println("2");
 		GiftCardPage gcp = new GiftCardPage(driver);
 		gcp.fillForm("Invalid details");
 		gcp.confirmForm();

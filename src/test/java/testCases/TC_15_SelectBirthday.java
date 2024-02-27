@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_15_SelectBirthday extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","master"})
 	void selectBirthdayOption() {
 		GiftCardPage gcp = new GiftCardPage(driver);
 		gcp.selectBirthday();

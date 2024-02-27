@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_10_PrintSubMenuInfo extends BaseClass{
 	
-	@Test
+	@Test(groups= {"master"})
 	void printSubmenu() {
 		SearchPage sp = new SearchPage(driver);
 		sp.printSubmenu();

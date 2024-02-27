@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_09_RetrieveSubMenuInformation extends BaseClass{
 
-	@Test
+	@Test(groups= {"master"})
 	void retrieveInfo() {
 		SearchPage sp = new SearchPage(driver);
 		sp.hoverLiving();

@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_08_VerifyLivingSubmenus extends BaseClass{
 	
-	@Test
+	@Test(groups= {"sanity","master"})
 	void verifyLivingSubmenu() {
 		SearchPage sp = new SearchPage(driver);
 		sp.hoverLiving();

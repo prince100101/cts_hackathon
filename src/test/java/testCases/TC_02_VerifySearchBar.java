@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_02_VerifySearchBar extends BaseClass{
 	
-	@Test
+	@Test(groups= {"sanity","master"})
 	void verifySearchBar() {
 		HomePage hp = new HomePage(driver);
 		Assert.assertTrue(hp.verifySearchBar());		

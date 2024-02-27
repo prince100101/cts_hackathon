@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_12_NavigateToGiftCard extends BaseClass{
 
-	@Test
+	@Test(groups= {"sanity","regression","master"})
 	void navigateToGiftCards() {
 		SearchPage sp = new SearchPage(driver);
 		sp.navigateToGiftCards();

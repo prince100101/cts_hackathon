@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_13_VerifyNavigationToGiftCard extends BaseClass{
 	
-	@Test
+	@Test(groups= {"sanity","master"})
 	void verifyNvigationToGiftCards() {
 		GiftCardPage gcp = new GiftCardPage(driver);
 		Assert.assertEquals("Gift Card - Buy Gift Cards & Vouchers Online for Wedding, Birthday | Urban Ladder", gcp.verifyNavigation());

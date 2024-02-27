@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_03_SearchForBookshelves extends BaseClass {
 
-	@Test
+	@Test( groups={"regression","master"})
 	void searchForBookshelves() {
 		HomePage hp = new HomePage(driver);
 		hp.searchBookshelves();

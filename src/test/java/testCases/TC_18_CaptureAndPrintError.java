@@ -7,7 +7,7 @@ import testBase.BaseClass;
 
 public class TC_18_CaptureAndPrintError extends BaseClass{
 
-	@Test
+	@Test(groups= {"regression","master"})
 	void getAlert() {
 		GiftCardPage gcp = new GiftCardPage(driver);
 		gcp.getAlert();

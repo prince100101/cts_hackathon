@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_14_VerifyBirthDayLink extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","master"})
 	void verifyBirthDayButton() {
 		GiftCardPage gcp = new GiftCardPage(driver);
 		Assert.assertTrue(gcp.verifyBirthDayLink());

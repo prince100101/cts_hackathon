@@ -172,8 +172,7 @@ public class SearchPage extends BasePage {
 	}
 	
 	public boolean verifyGiftCard() {
-		JavascriptExecutor js=(JavascriptExecutor) driver;
-	    js.executeScript("arguments [0].scrollIntoView();", link_giftcards_ele);
+		scrollToTop();
 		return link_giftcards_ele.isDisplayed();
 	}
 	
@@ -182,12 +181,15 @@ public class SearchPage extends BasePage {
 	}
 	
 	public void handlePopup() {
-		System.out.println("executed");
+		//scrollToTop();
 		if(button_closepopup_ele.isDisplayed()) {
-			System.out.println("found");
 			button_closepopup_ele.click();
-			System.out.println("clicked");
 		}
+	}
+	
+	public void scrollToTop() {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+	    js.executeScript("arguments [0].scrollIntoView();", link_giftcards_ele);
 	}
 	
 	

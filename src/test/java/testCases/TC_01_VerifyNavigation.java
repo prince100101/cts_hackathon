@@ -8,7 +8,7 @@ import testBase.BaseClass;
 
 public class TC_01_VerifyNavigation extends BaseClass {
 	
-	@Test
+	@Test(groups= {"sanity","master"})
 	void verifyNavigation() {
 		HomePage hp = new HomePage(driver);
 		//logger.info("TC_01_VerifyNavigation started");
