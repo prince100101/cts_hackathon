@@ -58,6 +58,9 @@ public class GiftCardPage extends BasePage {
 	@FindBy(id="ip_4081352456")
 	WebElement input_youremail_ele;
 	
+	@FindBy(xpath="//div[@class='dL47V']/div")
+	List<WebElement> text_confirminfo_list;
+	
 	public String verifyNavigation() {
 		return driver.getTitle();
 	}
@@ -83,9 +86,10 @@ public class GiftCardPage extends BasePage {
 			int i=0;
 			ArrayList<String> details = new ArrayList<String>();
 
-			for(int j=0;j<7;j++) {
+			for(int j=0;j<8;j++) {
 				try {
 					details.add(ExcelUtilities.getCellData(form, 1, j));
+				
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
@@ -94,19 +98,19 @@ public class GiftCardPage extends BasePage {
 				e.sendKeys(details.get(i++));
 				
 			}
-			try {
-				input_pincode_ele.sendKeys(ExcelUtilities.getCellData(form, 1, 7));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			
+			input_pincode_ele.sendKeys(details.get(7));
+			
+			
 		}else {
 
 			int i=0;
 			ArrayList<String> details = new ArrayList<String>();
 
-			for(int j=0;j<7;j++) {
+			for(int j=0;j<8;j++) {
 				try {
 					details.add(ExcelUtilities.getCellData(form, 1, j));
+					
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
@@ -118,14 +122,10 @@ public class GiftCardPage extends BasePage {
 			for(WebElement e: text_form_list2) {
 				e.sendKeys(details.get(i++));
 			}
-			text_form_list2.get(0).clear();
-			text_form_list.get(0).sendKeys(details.get(6));
+			
 			input_pincode_ele.clear();;
-			try {
-				input_pincode_ele.sendKeys(ExcelUtilities.getCellData(form, 1, 7));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			input_pincode_ele.sendKeys(details.get(7));
+			
 		}
 		
 	}
@@ -136,12 +136,22 @@ public class GiftCardPage extends BasePage {
 		button_confirmform_ele.click();
 	}
 	
+	public boolean confirmInfo() throws IOException {
+		for(int i=0;i<7;i++) {
+			if(!text_confirminfo_list.get(i).getText().equals(ExcelUtilities.getCellData("Valid details", 1, i))) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+	
 	public void getAlert() {
-//			try {
-//				ExcelUtilities.writeExcel(input_youremail_ele.getAttribute("validationMessage"));
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
+			try {
+				ExcelUtilities.writeExcel(input_youremail_ele.getAttribute("validationMessage"));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
 	
 		

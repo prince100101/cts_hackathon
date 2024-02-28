@@ -14,7 +14,7 @@
   	</groups>
   	<parameter name="browser" value="chrome">
 	    <classes>
-<!-- 	  <class name="testCases.TC_01_VerifyNavigation"/>
+     	  <class name="testCases.TC_01_VerifyNavigation"/>
 	      <class name="testCases.TC_02_VerifySearchBar"/>
 	   	  <class name="testCases.TC_03_SearchForBookshelves"/>
 	      <class name="testCases.TC_04_VerifyNavigationToSearchPage"/>
@@ -23,7 +23,7 @@
 	      <class name="testCases.TC_07_VerifyLivingMenu"/>
 	      <class name="testCases.TC_08_VerifyLivingSubmenus"/>
 	      <class name="testCases.TC_09_RetrieveSubMenuInformation"/>
-	      <class name="testCases.TC_10_PrintSubMenuInfo"/>-->
+	      <class name="testCases.TC_10_PrintSubMenuInfo"/>
 	      <class name="testCases.TC_11_VerifyGiftCardLink"/>
 	      <class name="testCases.TC_12_NavigateToGiftCard"/>
 	      <class name="testCases.TC_13_VerifyNavigationToGiftCard"/>
@@ -33,6 +33,8 @@
 	      <class name="testCases.TC_17_FillInvalidForm"/>
 	      <class name="testCases.TC_18_CaptureAndPrintError"/>
 	      <class name="testCases.TC_19_FillValidForm"/>
+	      <class name="testCases.TC_20_ValidateGivenDetails"/>
+	     
 	    </classes>
     </parameter>
 

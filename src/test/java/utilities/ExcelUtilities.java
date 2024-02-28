@@ -17,7 +17,6 @@ public class ExcelUtilities {
 	
 	public static String getCellData(String xlsheet, int rownum, int colnum) throws IOException 
 	{
-		System.out.println(System.getProperty("user.dir")+"\\testData"+"\\testData.xlsx");
 		FileInputStream fi=new FileInputStream(System.getProperty("user.dir")+"\\testData"+"\\testData.xlsx");
 		XSSFWorkbook wb=new XSSFWorkbook(fi);
 		XSSFSheet ws=wb.getSheet(xlsheet);
@@ -41,15 +40,15 @@ public class ExcelUtilities {
 	}
 	
 	public static void writeExcel(String dataToWrite) throws IOException {
-		FileInputStream fileInput = new FileInputStream((System.getProperty("user.dir") + "\\testData\\testData.xlsx"));  
+		FileInputStream fileInput = new FileInputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx"));  
 		XSSFWorkbook wb = new XSSFWorkbook(fileInput);    
-		XSSFSheet sheet = wb.getSheetAt(2); 
+		XSSFSheet sheet = wb.getSheetAt(0); 
 		  
 		XSSFRow newRow = sheet.createRow(1);     
 		
 		newRow.createCell(0).setCellValue(dataToWrite);  
 			
-		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testData.xlsx")); 
+		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx")); 
 		wb.write(fileOutput);     
 		fileOutput.close(); 
 		wb.close();      
