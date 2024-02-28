@@ -17,10 +17,12 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	
@@ -28,8 +30,9 @@ public class BaseClass {
 	public static Logger logger;
 	public static Properties p;
 	
+	@Parameters({"browser"})
 	@BeforeTest(groups= {"regression","master","sanity"})
-	public void setup() throws IOException {
+	public void setup(String br) throws IOException {
 		
 		FileReader file = new FileReader(".//src//test//resources//config.properties");
 		p = new Properties();
@@ -38,15 +41,24 @@ public class BaseClass {
 		
 		//logger = LogManager.getLogger(this.getClass());
 		if(p.getProperty("environment").equalsIgnoreCase("local")) {
-			driver = new ChromeDriver();
+			if(br.equals("chrome")) {
+				driver = new ChromeDriver();
+			}else if(br.equals("edge")) {
+				driver = new EdgeDriver();
+			}else {
+				System.out.println("Browser not available");
+			}
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get("https://www.urbanladder.com/");
 		}else {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setPlatform(Platform.WIN11);
-			cap.setBrowserName("chrome");
-			//MicrosoftEdge
+			if(br.equals("chrome")) {
+				cap.setBrowserName("chrome");
+			}else {
+				cap.setBrowserName("MicrosoftEdge");
+			}
 			driver = new RemoteWebDriver(new URL(nodeURL),cap);
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();

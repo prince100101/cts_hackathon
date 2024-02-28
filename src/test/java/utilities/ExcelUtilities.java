@@ -1,6 +1,8 @@
 package utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -13,9 +15,10 @@ public class ExcelUtilities {
 
 	static XSSFWorkbook wb;
 	
-	public static String getCellData(String xlfile, String xlsheet, int rownum, int colnum) throws IOException 
+	public static String getCellData(String xlsheet, int rownum, int colnum) throws IOException 
 	{
-		FileInputStream fi=new FileInputStream(xlfile);
+		System.out.println(System.getProperty("user.dir")+"\\testData"+"\\testData.xlsx");
+		FileInputStream fi=new FileInputStream(System.getProperty("user.dir")+"\\testData"+"\\testData.xlsx");
 		XSSFWorkbook wb=new XSSFWorkbook(fi);
 		XSSFSheet ws=wb.getSheet(xlsheet);
 		XSSFRow row=ws.getRow(rownum);
@@ -36,4 +39,20 @@ public class ExcelUtilities {
 		
 		return data;
 	}
+	
+	public static void writeExcel(String dataToWrite) throws IOException {
+		FileInputStream fileInput = new FileInputStream((System.getProperty("user.dir") + "\\testData\\testData.xlsx"));  
+		XSSFWorkbook wb = new XSSFWorkbook(fileInput);    
+		XSSFSheet sheet = wb.getSheetAt(2); 
+		  
+		XSSFRow newRow = sheet.createRow(1);     
+		
+		newRow.createCell(0).setCellValue(dataToWrite);  
+			
+		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testData.xlsx")); 
+		wb.write(fileOutput);     
+		fileOutput.close(); 
+		wb.close();      
+		fileInput.close();  
+		}
 }

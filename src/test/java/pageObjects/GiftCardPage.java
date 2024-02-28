@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,11 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.log.TextFormatter;
+
+import com.aventstack.extentreports.model.ScreenCapture;
+
+import utilities.ExcelUtilities;
 
 public class GiftCardPage extends BasePage {
 
@@ -36,6 +42,9 @@ public class GiftCardPage extends BasePage {
 	
 	@FindBy(xpath="//div[@class='_1CgPp _1smxk']/input")
 	List<WebElement> text_form_list;
+	
+	@FindBy(xpath="//div[@class='_1CgPp _1smxk _3AMaB']/input")
+	List<WebElement> text_form_list2;
 	
 	@FindBy(xpath="//button[@class='_3Hxyv _1fVSi action-button _1gIUf _1XfDi']")
 	WebElement button_confirmform_ele;
@@ -70,38 +79,53 @@ public class GiftCardPage extends BasePage {
 	}
 	
 	public void fillForm(String form) {
-		if(form.equalsIgnoreCase("Invalid details")) {
+		if(form.equals("Invalid details")) {
 			int i=0;
 			ArrayList<String> details = new ArrayList<String>();
-			details.add("Recipient");
-			details.add("Recipient@email.com");
-			details.add("9917234567");
-			details.add("yourname");
-			details.add("youremail.com");
-			details.add("9876543210");
-			details.add("Address");
+
+			for(int j=0;j<7;j++) {
+				try {
+					details.add(ExcelUtilities.getCellData(form, 1, j));
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
 			for(WebElement e: text_form_list) {
 				e.sendKeys(details.get(i++));
+				
 			}
-			input_pincode_ele.sendKeys("603103");
+			try {
+				input_pincode_ele.sendKeys(ExcelUtilities.getCellData(form, 1, 7));
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}else {
+
 			int i=0;
 			ArrayList<String> details = new ArrayList<String>();
-			details.add("Recipient");
-			details.add("Recipient@email.com");
-			details.add("9917234567");
-			details.add("yourname");
-			details.add("your@email.com");
-			details.add("9876543210");
-			details.add("Address");
-			for(WebElement e: text_form_list) {
-				e.clear();;
+
+			for(int j=0;j<7;j++) {
+				try {
+					details.add(ExcelUtilities.getCellData(form, 1, j));
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
-			for(WebElement e: text_form_list) {
+			
+			for(WebElement e: text_form_list2) {
+				e.clear();
+			}
+			for(WebElement e: text_form_list2) {
 				e.sendKeys(details.get(i++));
 			}
+			text_form_list2.get(0).clear();
+			text_form_list.get(0).sendKeys(details.get(6));
 			input_pincode_ele.clear();;
-			input_pincode_ele.sendKeys("603103");
+			try {
+				input_pincode_ele.sendKeys(ExcelUtilities.getCellData(form, 1, 7));
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 		
 	}
@@ -113,11 +137,14 @@ public class GiftCardPage extends BasePage {
 	}
 	
 	public void getAlert() {
-			System.out.println(input_youremail_ele.getAttribute("validationMessage"));
+//			try {
+//				ExcelUtilities.writeExcel(input_youremail_ele.getAttribute("validationMessage"));
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
 	}
 	
-	//further code
-	
+		
 	
 	
 	

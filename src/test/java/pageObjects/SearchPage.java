@@ -105,7 +105,6 @@ public class SearchPage extends BasePage {
 		Actions action = new Actions(driver);
 		action.moveToElement(dropdown_price_ele).perform();;
 		Thread.sleep(3000);
-		// 43680-15000 / 136(per pixel)
 		action.clickAndHold(button_dragprice_ele).moveByOffset(-210, 0).perform();
 		System.out.println(text_targetprice_ele.getText());
 		//wait.until(ExpectedConditions.textToBePresentInElement(text_targetprice_ele, "15000"));
