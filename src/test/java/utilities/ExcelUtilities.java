@@ -1,9 +1,9 @@
 package utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -48,6 +48,32 @@ public class ExcelUtilities {
 		
 		newRow.createCell(0).setCellValue(dataToWrite);  
 			
+		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx")); 
+		wb.write(fileOutput);     
+		fileOutput.close(); 
+		wb.close();      
+		fileInput.close();  
+		}
+	
+	public static void writeExcel(ArrayList<String> dataToWrite, String sheetName, int row,int col) throws IOException {
+		FileInputStream fileInput = new FileInputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx"));  
+		XSSFWorkbook wb = new XSSFWorkbook(fileInput);    
+		if(wb.getSheetIndex(sheetName)==-1) {
+			wb.createSheet(sheetName);
+		}
+		XSSFSheet sheet = wb.getSheet(sheetName);  
+		
+		for(String s: dataToWrite) {
+			XSSFRow newRow = sheet.getRow(row++);  
+			if(newRow==null) {
+				newRow = sheet.createRow(row++);
+			}
+			newRow.createCell(col).setCellValue(s);  
+		}
+		sheet.autoSizeColumn(0);
+		sheet.autoSizeColumn(1);
+		sheet.autoSizeColumn(2);
+		
 		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx")); 
 		wb.write(fileOutput);     
 		fileOutput.close(); 

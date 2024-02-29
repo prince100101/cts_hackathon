@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +15,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.ExcelUtilities;
+
 public class SearchPage extends BasePage {
 
 	public SearchPage(WebDriver driver) {
 		super(driver);
 	}
+	
+	//webelements required on search page
+	
 	@FindBy(xpath="//h2[@class='withsubtext']")
 	WebElement text_searchpaageheading_ele;
 	
@@ -77,13 +83,15 @@ public class SearchPage extends BasePage {
 	WebElement text_targetprice_ele;
 	
 	
-	ArrayList<String> submenu = new ArrayList<String>();
+	ArrayList<String> submenu = new ArrayList<String>(); //for storing string in submenu webelemnts
 	
+	//verifying navigation to search page
 	public boolean verifyNavigation() {
 		handlePopup();
 		return text_searchpaageheading_ele.isDisplayed();
 	}
 	
+	//sorting results
 	public void sortBy() {
 		handlePopup();
 		Actions action = new Actions(driver);
@@ -92,6 +100,7 @@ public class SearchPage extends BasePage {
 		button_sortby_price_ele.click();
 	}
 	
+	//exclude out of stock
 	public void tickChceckbox() {
 		handlePopup();
 		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -99,6 +108,7 @@ public class SearchPage extends BasePage {
 		checkbox_stock_ele.click();
 	}
 	
+	//filtering search results based on price
 	public void setPrice() throws InterruptedException {
 		handlePopup();
 		
@@ -112,6 +122,7 @@ public class SearchPage extends BasePage {
 		action.release().perform();
 	}
 	
+	//filtering search results according to category
 	public void setCategory() {
 		handlePopup();
 		
@@ -120,6 +131,7 @@ public class SearchPage extends BasePage {
 		input_category_ele.click();
 	}
 	
+	//printing bookshelves info
 	public void printInfo() {
 		handlePopup();
 		ArrayList<String> title = new ArrayList<String>();
@@ -141,22 +153,36 @@ public class SearchPage extends BasePage {
 		System.out.println(title);
 		System.out.println(brand);
 		System.out.println(price);
+		try {
+			ExcelUtilities.writeExcel(title,"Bookshelves", 1, 0);
+			ExcelUtilities.writeExcel(brand,"Bookshelves", 1, 1);
+			ExcelUtilities.writeExcel(price,"Bookshelves", 1, 2);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+
+		
 	}
 	
+	//verifying presence of living menu
 	public boolean verifyLiving() {
 		return dropdown_living_ele.isDisplayed();
 	}
 	
+	//hovering over living menu
 	public void hoverLiving() {
 		Actions action = new Actions(driver);
 		action.moveToElement(dropdown_living_ele);
 		action.perform();
 	}
 	
+	//verifying presence of living submenus
 	public boolean verifySebmenu() {
 		return text_submenuheading_ele.isDisplayed();
 	}
 	
+	//retrieving submenu info
 	public void retrieveSubmenu() {
 		
 		for(WebElement e: text_submenuitems_list) {
@@ -164,31 +190,41 @@ public class SearchPage extends BasePage {
 		}
 	}
 	
+	//print submenu info
 	public void printSubmenu() {
 		retrieveSubmenu();
 		System.out.println(text_submenuheading_ele.getText());
 		System.out.println(submenu);
+		try {
+			ExcelUtilities.writeExcel(submenu,"Submenu",1,0);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
+	//verifying presence of gift card link
 	public boolean verifyGiftCard() {
-		scrollToTop();
+		scrollToElement(link_giftcards_ele);
 		return link_giftcards_ele.isDisplayed();
 	}
 	
+	//navigation to gift card
 	public void navigateToGiftCards() {
 		link_giftcards_ele.click();
 	}
 	
+	//for handling pop up
 	public void handlePopup() {
-		//scrollToTop();
 		if(button_closepopup_ele.isDisplayed()) {
 			button_closepopup_ele.click();
 		}
+		scrollToElement(dropdown_price_ele);
 	}
 	
-	public void scrollToTop() {
+	//for scrolling
+	public void scrollToElement(WebElement e) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-	    js.executeScript("arguments [0].scrollIntoView();", link_giftcards_ele);
+	    js.executeScript("arguments [0].scrollIntoView();", e);
 	}
 	
 	

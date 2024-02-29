@@ -6,7 +6,7 @@ import pageObjects.SearchPage;
 import testBase.BaseClass;
 
 public class TC_05_FilterBookshelves extends BaseClass {
-	
+
 	@Test(priority = 0, groups= {"regression","master"})
 	void sortBy() {
 		SearchPage sp = new SearchPage(driver);

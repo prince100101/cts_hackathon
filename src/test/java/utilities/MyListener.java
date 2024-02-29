@@ -1,4 +1,7 @@
 package utilities;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -19,8 +22,8 @@ public class MyListener implements ITestListener{
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
 
 	public void onStart(ITestContext context) {
-			
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
+		String timeStamp = new SimpleDateFormat("yyMMddhhmmss").format(new Date());
+		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/"+timeStamp+"myReport.html");//specify location of the report
 		
 		sparkReporter.config().setDocumentTitle("Test Report"); // TiTle of report
 		sparkReporter.config().setReportName("Display Bookshelves"); // name of the report
@@ -42,9 +45,8 @@ public class MyListener implements ITestListener{
 		test = extent.createTest(result.getName()); // create a new entry in the report
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
-		
 		try {
-			String imgPath = new BaseClass().captureScreen(result.getTestName());
+			String imgPath = new BaseClass().captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		}catch(Exception e) {
 			e.printStackTrace();

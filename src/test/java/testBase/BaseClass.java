@@ -1,7 +1,6 @@
 package testBase;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
@@ -27,7 +26,6 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
 	
 	public static WebDriver driver;
-	public static Logger logger;
 	public static Properties p;
 	
 	@Parameters({"browser"})
@@ -38,8 +36,7 @@ public class BaseClass {
 		p = new Properties();
 		p.load(file);
 		String nodeURL= "http://localhost:4444/wd/hub";
-		
-		//logger = LogManager.getLogger(this.getClass());
+				
 		if(p.getProperty("environment").equalsIgnoreCase("local")) {
 			if(br.equals("chrome")) {
 				driver = new ChromeDriver();
@@ -63,7 +60,7 @@ public class BaseClass {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.get("https://www.urbanladder.com/");
+			driver.get(p.getProperty("url"));
 		}
 		
 	}
