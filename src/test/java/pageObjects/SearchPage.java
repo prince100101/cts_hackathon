@@ -5,7 +5,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -118,7 +117,7 @@ public class SearchPage extends BasePage {
 		action.clickAndHold(button_dragprice_ele).moveByOffset(-210, 0).perform();
 		System.out.println(text_targetprice_ele.getText());
 		//wait.until(ExpectedConditions.textToBePresentInElement(text_targetprice_ele, "15000"));
-
+		
 		action.release().perform();
 	}
 	
@@ -138,16 +137,16 @@ public class SearchPage extends BasePage {
 		ArrayList<String> brand = new ArrayList<String>();
 		ArrayList<String> price = new ArrayList<String>();
 		
-		for(WebElement e : text_bookshelf_title_list) {
-			title.add(e.getText());
+		for(int i=0;i<3;i++) {
+			title.add(text_bookshelf_title_list.get(i).getText());
 		}
 		
-		for(WebElement e : text_bookshelf_brand_list) {
-			brand.add(e.getText());
+		for(int i=0;i<3;i++) {
+			price.add(text_bookshelf_price_list.get(i).getText());
 		}
 		
-		for(WebElement e : text_bookshelf_price_list) {
-			price.add(e.getText());
+		for(int i=0;i<3;i++) {
+			brand.add(text_bookshelf_brand_list.get(i).getText());
 		}
 		
 		System.out.println(title);

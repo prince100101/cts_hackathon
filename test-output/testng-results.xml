@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="38" total="61" passed="22" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-06T10:19:08 IST" name="Suite" finished-at="2024-03-06T10:20:00 IST" duration-ms="52689">
+    <groups>
+      <group name="regression">
+        <method signature="TC_03_SearchForBookshelves.searchForBookshelves()[pri:0, instance:testCases.TC_03_SearchForBookshelves@201a4587]" name="searchForBookshelves" class="testCases.TC_03_SearchForBookshelves"/>
+        <method signature="TC_04_VerifyNavigationToSearchPage.verifyNavigation()[pri:0, instance:testCases.TC_04_VerifyNavigationToSearchPage@61001b64]" name="verifyNavigation" class="testCases.TC_04_VerifyNavigationToSearchPage"/>
+        <method signature="TC_05_FilterBookshelves.excludeOutOfStock()[pri:1, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="excludeOutOfStock" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.setCategory()[pri:3, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="setCategory" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.setPrice()[pri:2, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="setPrice" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.sortBy()[pri:0, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="sortBy" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_06_PrintBookshelves.printInfo()[pri:0, instance:testCases.TC_06_PrintBookshelves@47d9a273]" name="printInfo" class="testCases.TC_06_PrintBookshelves"/>
+        <method signature="TC_11_VerifyGiftCardLink.verifyGiftCardLink()[pri:0, instance:testCases.TC_11_VerifyGiftCardLink@2dc54ad4]" name="verifyGiftCardLink" class="testCases.TC_11_VerifyGiftCardLink"/>
+        <method signature="TC_12_NavigateToGiftCard.navigateToGiftCards()[pri:0, instance:testCases.TC_12_NavigateToGiftCard@4659191b]" name="navigateToGiftCards" class="testCases.TC_12_NavigateToGiftCard"/>
+        <method signature="TC_14_VerifyBirthDayLink.verifyBirthDayButton()[pri:0, instance:testCases.TC_14_VerifyBirthDayLink@4b0d79fc]" name="verifyBirthDayButton" class="testCases.TC_14_VerifyBirthDayLink"/>
+        <method signature="TC_15_SelectBirthday.selectBirthdayOption()[pri:0, instance:testCases.TC_15_SelectBirthday@4c1909a3]" name="selectBirthdayOption" class="testCases.TC_15_SelectBirthday"/>
+        <method signature="TC_16_FillPriceDetails.customiseGiftCard()[pri:0, instance:testCases.TC_16_FillPriceDetails@428640fa]" name="customiseGiftCard" class="testCases.TC_16_FillPriceDetails"/>
+        <method signature="TC_17_FillInvalidForm.fillInvalidForm()[pri:0, instance:testCases.TC_17_FillInvalidForm@d9345cd]" name="fillInvalidForm" class="testCases.TC_17_FillInvalidForm"/>
+        <method signature="TC_18_CaptureAndPrintError.getAlert()[pri:0, instance:testCases.TC_18_CaptureAndPrintError@2d710f1a]" name="getAlert" class="testCases.TC_18_CaptureAndPrintError"/>
+        <method signature="TC_19_FillValidForm.fillValidForm()[pri:0, instance:testCases.TC_19_FillValidForm@29215f06]" name="fillValidForm" class="testCases.TC_19_FillValidForm"/>
+        <method signature="TC_20_ValidateGivenDetails.confirmInfo()[pri:0, instance:testCases.TC_20_ValidateGivenDetails@59505b48]" name="confirmInfo" class="testCases.TC_20_ValidateGivenDetails"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_01_VerifyNavigation.verifyNavigation()[pri:0, instance:testCases.TC_01_VerifyNavigation@290222c1]" name="verifyNavigation" class="testCases.TC_01_VerifyNavigation"/>
+        <method signature="TC_02_VerifySearchBar.verifySearchBar()[pri:0, instance:testCases.TC_02_VerifySearchBar@47e2e487]" name="verifySearchBar" class="testCases.TC_02_VerifySearchBar"/>
+        <method signature="TC_07_VerifyLivingMenu.verifyLivingMenu()[pri:0, instance:testCases.TC_07_VerifyLivingMenu@4b8ee4de]" name="verifyLivingMenu" class="testCases.TC_07_VerifyLivingMenu"/>
+        <method signature="TC_08_VerifyLivingSubmenus.verifyLivingSubmenu()[pri:0, instance:testCases.TC_08_VerifyLivingSubmenus@27f981c6]" name="verifyLivingSubmenu" class="testCases.TC_08_VerifyLivingSubmenus"/>
+        <method signature="TC_11_VerifyGiftCardLink.verifyGiftCardLink()[pri:0, instance:testCases.TC_11_VerifyGiftCardLink@2dc54ad4]" name="verifyGiftCardLink" class="testCases.TC_11_VerifyGiftCardLink"/>
+        <method signature="TC_12_NavigateToGiftCard.navigateToGiftCards()[pri:0, instance:testCases.TC_12_NavigateToGiftCard@4659191b]" name="navigateToGiftCards" class="testCases.TC_12_NavigateToGiftCard"/>
+        <method signature="TC_13_VerifyNavigationToGiftCard.verifyNvigationToGiftCards()[pri:0, instance:testCases.TC_13_VerifyNavigationToGiftCard@55634720]" name="verifyNvigationToGiftCards" class="testCases.TC_13_VerifyNavigationToGiftCard"/>
+      </group> <!-- sanity -->
+      <group name="master">
+        <method signature="TC_01_VerifyNavigation.verifyNavigation()[pri:0, instance:testCases.TC_01_VerifyNavigation@290222c1]" name="verifyNavigation" class="testCases.TC_01_VerifyNavigation"/>
+        <method signature="TC_02_VerifySearchBar.verifySearchBar()[pri:0, instance:testCases.TC_02_VerifySearchBar@47e2e487]" name="verifySearchBar" class="testCases.TC_02_VerifySearchBar"/>
+        <method signature="TC_03_SearchForBookshelves.searchForBookshelves()[pri:0, instance:testCases.TC_03_SearchForBookshelves@201a4587]" name="searchForBookshelves" class="testCases.TC_03_SearchForBookshelves"/>
+        <method signature="TC_04_VerifyNavigationToSearchPage.verifyNavigation()[pri:0, instance:testCases.TC_04_VerifyNavigationToSearchPage@61001b64]" name="verifyNavigation" class="testCases.TC_04_VerifyNavigationToSearchPage"/>
+        <method signature="TC_05_FilterBookshelves.excludeOutOfStock()[pri:1, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="excludeOutOfStock" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.setCategory()[pri:3, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="setCategory" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.setPrice()[pri:2, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="setPrice" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_05_FilterBookshelves.sortBy()[pri:0, instance:testCases.TC_05_FilterBookshelves@26e356f0]" name="sortBy" class="testCases.TC_05_FilterBookshelves"/>
+        <method signature="TC_06_PrintBookshelves.printInfo()[pri:0, instance:testCases.TC_06_PrintBookshelves@47d9a273]" name="printInfo" class="testCases.TC_06_PrintBookshelves"/>
+        <method signature="TC_07_VerifyLivingMenu.verifyLivingMenu()[pri:0, instance:testCases.TC_07_VerifyLivingMenu@4b8ee4de]" name="verifyLivingMenu" class="testCases.TC_07_VerifyLivingMenu"/>
+        <method signature="TC_08_VerifyLivingSubmenus.verifyLivingSubmenu()[pri:0, instance:testCases.TC_08_VerifyLivingSubmenus@27f981c6]" name="verifyLivingSubmenu" class="testCases.TC_08_VerifyLivingSubmenus"/>
+        <method signature="TC_09_RetrieveSubMenuInformation.retrieveInfo()[pri:0, instance:testCases.TC_09_RetrieveSubMenuInformation@1b11171f]" name="retrieveInfo" class="testCases.TC_09_RetrieveSubMenuInformation"/>
+        <method signature="TC_10_PrintSubMenuInfo.printSubmenu()[pri:0, instance:testCases.TC_10_PrintSubMenuInfo@1151e434]" name="printSubmenu" class="testCases.TC_10_PrintSubMenuInfo"/>
+        <method signature="TC_11_VerifyGiftCardLink.verifyGiftCardLink()[pri:0, instance:testCases.TC_11_VerifyGiftCardLink@2dc54ad4]" name="verifyGiftCardLink" class="testCases.TC_11_VerifyGiftCardLink"/>
+        <method signature="TC_12_NavigateToGiftCard.navigateToGiftCards()[pri:0, instance:testCases.TC_12_NavigateToGiftCard@4659191b]" name="navigateToGiftCards" class="testCases.TC_12_NavigateToGiftCard"/>
+        <method signature="TC_13_VerifyNavigationToGiftCard.verifyNvigationToGiftCards()[pri:0, instance:testCases.TC_13_VerifyNavigationToGiftCard@55634720]" name="verifyNvigationToGiftCards" class="testCases.TC_13_VerifyNavigationToGiftCard"/>
+        <method signature="TC_14_VerifyBirthDayLink.verifyBirthDayButton()[pri:0, instance:testCases.TC_14_VerifyBirthDayLink@4b0d79fc]" name="verifyBirthDayButton" class="testCases.TC_14_VerifyBirthDayLink"/>
+        <method signature="TC_15_SelectBirthday.selectBirthdayOption()[pri:0, instance:testCases.TC_15_SelectBirthday@4c1909a3]" name="selectBirthdayOption" class="testCases.TC_15_SelectBirthday"/>
+        <method signature="TC_16_FillPriceDetails.customiseGiftCard()[pri:0, instance:testCases.TC_16_FillPriceDetails@428640fa]" name="customiseGiftCard" class="testCases.TC_16_FillPriceDetails"/>
+        <method signature="TC_17_FillInvalidForm.fillInvalidForm()[pri:0, instance:testCases.TC_17_FillInvalidForm@d9345cd]" name="fillInvalidForm" class="testCases.TC_17_FillInvalidForm"/>
+        <method signature="TC_18_CaptureAndPrintError.getAlert()[pri:0, instance:testCases.TC_18_CaptureAndPrintError@2d710f1a]" name="getAlert" class="testCases.TC_18_CaptureAndPrintError"/>
+        <method signature="TC_19_FillValidForm.fillValidForm()[pri:0, instance:testCases.TC_19_FillValidForm@29215f06]" name="fillValidForm" class="testCases.TC_19_FillValidForm"/>
+        <method signature="TC_20_ValidateGivenDetails.confirmInfo()[pri:0, instance:testCases.TC_20_ValidateGivenDetails@59505b48]" name="confirmInfo" class="testCases.TC_20_ValidateGivenDetails"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2024-03-06T10:19:08 IST" name="Test1" finished-at="2024-03-06T10:20:00 IST" duration-ms="52689">
+      <class name="testCases.TC_08_VerifyLivingSubmenus">
+        <test-method signature="verifyLivingSubmenu()[pri:0, instance:testCases.TC_08_VerifyLivingSubmenus@27f981c6]" started-at="2024-03-06T10:19:46 IST" name="verifyLivingSubmenu" finished-at="2024-03-06T10:19:46 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLivingSubmenu -->
+      </class> <!-- testCases.TC_08_VerifyLivingSubmenus -->
+      <class name="testCases.TC_03_SearchForBookshelves">
+        <test-method signature="searchForBookshelves()[pri:0, instance:testCases.TC_03_SearchForBookshelves@201a4587]" started-at="2024-03-06T10:19:26 IST" name="searchForBookshelves" finished-at="2024-03-06T10:19:30 IST" duration-ms="4141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForBookshelves -->
+      </class> <!-- testCases.TC_03_SearchForBookshelves -->
+      <class name="testCases.TC_14_VerifyBirthDayLink">
+        <test-method signature="verifyBirthDayButton()[pri:0, instance:testCases.TC_14_VerifyBirthDayLink@4b0d79fc]" started-at="2024-03-06T10:19:53 IST" name="verifyBirthDayButton" finished-at="2024-03-06T10:19:53 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBirthDayButton -->
+      </class> <!-- testCases.TC_14_VerifyBirthDayLink -->
+      <class name="testCases.TC_19_FillValidForm">
+        <test-method signature="fillValidForm()[pri:0, instance:testCases.TC_19_FillValidForm@29215f06]" started-at="2024-03-06T10:19:56 IST" name="fillValidForm" finished-at="2024-03-06T10:19:58 IST" duration-ms="2018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillValidForm -->
+      </class> <!-- testCases.TC_19_FillValidForm -->
+      <class name="testCases.TC_01_VerifyNavigation">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_01_VerifyNavigation@290222c1]" started-at="2024-03-06T10:19:08 IST" name="setup" finished-at="2024-03-06T10:19:25 IST" duration-ms="16626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNavigation()[pri:0, instance:testCases.TC_01_VerifyNavigation@290222c1]" started-at="2024-03-06T10:19:25 IST" name="verifyNavigation" finished-at="2024-03-06T10:19:25 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_VerifyNavigation@290222c1]" started-at="2024-03-06T10:19:59 IST" name="tearDown" finished-at="2024-03-06T10:20:00 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_01_VerifyNavigation -->
+      <class name="testCases.TC_15_SelectBirthday">
+        <test-method signature="selectBirthdayOption()[pri:0, instance:testCases.TC_15_SelectBirthday@4c1909a3]" started-at="2024-03-06T10:19:53 IST" name="selectBirthdayOption" finished-at="2024-03-06T10:19:53 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBirthdayOption -->
+      </class> <!-- testCases.TC_15_SelectBirthday -->
+      <class name="testCases.TC_16_FillPriceDetails">
+        <test-method signature="customiseGiftCard()[pri:0, instance:testCases.TC_16_FillPriceDetails@428640fa]" started-at="2024-03-06T10:19:53 IST" name="customiseGiftCard" finished-at="2024-03-06T10:19:53 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customiseGiftCard -->
+      </class> <!-- testCases.TC_16_FillPriceDetails -->
+      <class name="testCases.TC_05_FilterBookshelves">
+        <test-method signature="sortBy()[pri:0, instance:testCases.TC_05_FilterBookshelves@26e356f0]" started-at="2024-03-06T10:19:31 IST" name="sortBy" finished-at="2024-03-06T10:19:31 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortBy -->
+        <test-method signature="excludeOutOfStock()[pri:1, instance:testCases.TC_05_FilterBookshelves@26e356f0]" started-at="2024-03-06T10:19:31 IST" name="excludeOutOfStock" finished-at="2024-03-06T10:19:33 IST" duration-ms="1383" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="checkbox" name="filters[availability][]" id="filters_availability_In_Stock_Only" value="In Stock Only"> is not clickable at point (835, 43). Other element would receive the click: <div class="navigation_wrapper fixedmenu">...</div>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b56b83b1b03d21bbae869ed17955b33f, clickElement {id=770DACA5F3CFD7F2C39A1F3A3768D703_element_164}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b56b83b1b03d21bbae869ed17955b33f)] -> id: filters_availability_In_Stock_Only]
+Session ID: b56b83b1b03d21bbae869ed17955b33f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" name="filters[availability][]" id="filters_availability_In_Stock_Only" value="In Stock Only"> is not clickable at point (835, 43). Other element would receive the click: <div class="navigation_wrapper fixedmenu">...</div>
+  (Session info: chrome=113.0.5672.93)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b56b83b1b03d21bbae869ed17955b33f, clickElement {id=770DACA5F3CFD7F2C39A1F3A3768D703_element_164}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:53498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53498/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b56b83b1b03d21bbae869ed17955b33f)] -> id: filters_availability_In_Stock_Only]
+Session ID: b56b83b1b03d21bbae869ed17955b33f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pageObjects.SearchPage.tickChceckbox(SearchPage.java:107)
+at testCases.TC_05_FilterBookshelves.excludeOutOfStock(TC_05_FilterBookshelves.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excludeOutOfStock -->
+        <test-method signature="setPrice()[pri:2, instance:testCases.TC_05_FilterBookshelves@26e356f0]" started-at="2024-03-06T10:19:33 IST" name="setPrice" finished-at="2024-03-06T10:19:40 IST" duration-ms="6693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPrice -->
+        <test-method signature="setCategory()[pri:3, instance:testCases.TC_05_FilterBookshelves@26e356f0]" started-at="2024-03-06T10:19:40 IST" name="setCategory" finished-at="2024-03-06T10:19:40 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCategory -->
+      </class> <!-- testCases.TC_05_FilterBookshelves -->
+      <class name="testCases.TC_09_RetrieveSubMenuInformation">
+        <test-method signature="retrieveInfo()[pri:0, instance:testCases.TC_09_RetrieveSubMenuInformation@1b11171f]" started-at="2024-03-06T10:19:46 IST" name="retrieveInfo" finished-at="2024-03-06T10:19:47 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveInfo -->
+      </class> <!-- testCases.TC_09_RetrieveSubMenuInformation -->
+      <class name="testCases.TC_07_VerifyLivingMenu">
+        <test-method signature="verifyLivingMenu()[pri:0, instance:testCases.TC_07_VerifyLivingMenu@4b8ee4de]" started-at="2024-03-06T10:19:46 IST" name="verifyLivingMenu" finished-at="2024-03-06T10:19:46 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLivingMenu -->
+      </class> <!-- testCases.TC_07_VerifyLivingMenu -->
+      <class name="testCases.TC_17_FillInvalidForm">
+        <test-method signature="fillInvalidForm()[pri:0, instance:testCases.TC_17_FillInvalidForm@d9345cd]" started-at="2024-03-06T10:19:54 IST" name="fillInvalidForm" finished-at="2024-03-06T10:19:56 IST" duration-ms="1746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillInvalidForm -->
+      </class> <!-- testCases.TC_17_FillInvalidForm -->
+      <class name="testCases.TC_02_VerifySearchBar">
+        <test-method signature="verifySearchBar()[pri:0, instance:testCases.TC_02_VerifySearchBar@47e2e487]" started-at="2024-03-06T10:19:25 IST" name="verifySearchBar" finished-at="2024-03-06T10:19:25 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBar -->
+      </class> <!-- testCases.TC_02_VerifySearchBar -->
+      <class name="testCases.TC_06_PrintBookshelves">
+        <test-method signature="printInfo()[pri:0, instance:testCases.TC_06_PrintBookshelves@47d9a273]" started-at="2024-03-06T10:19:41 IST" name="printInfo" finished-at="2024-03-06T10:19:46 IST" duration-ms="4971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printInfo -->
+      </class> <!-- testCases.TC_06_PrintBookshelves -->
+      <class name="testCases.TC_13_VerifyNavigationToGiftCard">
+        <test-method signature="verifyNvigationToGiftCards()[pri:0, instance:testCases.TC_13_VerifyNavigationToGiftCard@55634720]" started-at="2024-03-06T10:19:52 IST" name="verifyNvigationToGiftCards" finished-at="2024-03-06T10:19:52 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNvigationToGiftCards -->
+      </class> <!-- testCases.TC_13_VerifyNavigationToGiftCard -->
+      <class name="testCases.TC_04_VerifyNavigationToSearchPage">
+        <test-method signature="verifyNavigation()[pri:0, instance:testCases.TC_04_VerifyNavigationToSearchPage@61001b64]" started-at="2024-03-06T10:19:30 IST" name="verifyNavigation" finished-at="2024-03-06T10:19:30 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigation -->
+      </class> <!-- testCases.TC_04_VerifyNavigationToSearchPage -->
+      <class name="testCases.TC_10_PrintSubMenuInfo">
+        <test-method signature="printSubmenu()[pri:0, instance:testCases.TC_10_PrintSubMenuInfo@1151e434]" started-at="2024-03-06T10:19:47 IST" name="printSubmenu" finished-at="2024-03-06T10:19:47 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printSubmenu -->
+      </class> <!-- testCases.TC_10_PrintSubMenuInfo -->
+      <class name="testCases.TC_20_ValidateGivenDetails">
+        <test-method signature="confirmInfo()[pri:0, instance:testCases.TC_20_ValidateGivenDetails@59505b48]" started-at="2024-03-06T10:19:58 IST" name="confirmInfo" finished-at="2024-03-06T10:19:59 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmInfo -->
+      </class> <!-- testCases.TC_20_ValidateGivenDetails -->
+      <class name="testCases.TC_18_CaptureAndPrintError">
+        <test-method signature="getAlert()[pri:0, instance:testCases.TC_18_CaptureAndPrintError@2d710f1a]" started-at="2024-03-06T10:19:56 IST" name="getAlert" finished-at="2024-03-06T10:19:56 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAlert -->
+      </class> <!-- testCases.TC_18_CaptureAndPrintError -->
+      <class name="testCases.TC_12_NavigateToGiftCard">
+        <test-method signature="navigateToGiftCards()[pri:0, instance:testCases.TC_12_NavigateToGiftCard@4659191b]" started-at="2024-03-06T10:19:48 IST" name="navigateToGiftCards" finished-at="2024-03-06T10:19:51 IST" duration-ms="3755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGiftCards -->
+      </class> <!-- testCases.TC_12_NavigateToGiftCard -->
+      <class name="testCases.TC_11_VerifyGiftCardLink">
+        <test-method signature="verifyGiftCardLink()[pri:0, instance:testCases.TC_11_VerifyGiftCardLink@2dc54ad4]" started-at="2024-03-06T10:19:47 IST" name="verifyGiftCardLink" finished-at="2024-03-06T10:19:47 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGiftCardLink -->
+      </class> <!-- testCases.TC_11_VerifyGiftCardLink -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

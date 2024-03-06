@@ -47,7 +47,7 @@ public class ExcelUtilities {
 		XSSFRow newRow = sheet.createRow(1);     
 		
 		newRow.createCell(0).setCellValue(dataToWrite);  
-			
+		sheet.autoSizeColumn(0);
 		FileOutputStream fileOutput = new FileOutputStream((System.getProperty("user.dir") + "\\testData\\testOutput.xlsx")); 
 		wb.write(fileOutput);     
 		fileOutput.close(); 
@@ -63,13 +63,27 @@ public class ExcelUtilities {
 		}
 		XSSFSheet sheet = wb.getSheet(sheetName);  
 		
+//		for(String s: dataToWrite) {
+//			XSSFRow newRow = sheet.getRow(row++);  
+//			if(newRow==null) {
+//				newRow = sheet.createRow(row++);
+//			}
+//			newRow.createCell(col).setCellValue(s);  
+//		}
+		int i=1;
 		for(String s: dataToWrite) {
-			XSSFRow newRow = sheet.getRow(row++);  
-			if(newRow==null) {
-				newRow = sheet.createRow(row++);
+			XSSFRow newRow = null;
+			if(sheet.getRow(i++)==null) {
+				newRow= sheet.createRow(row++); 
+				newRow.createCell(col).setCellValue(s);  
+
+			}else {
+				newRow= sheet.getRow(row++);
+				newRow.createCell(col).setCellValue(s);  
 			}
-			newRow.createCell(col).setCellValue(s);  
+					
 		}
+		
 		sheet.autoSizeColumn(0);
 		sheet.autoSizeColumn(1);
 		sheet.autoSizeColumn(2);
